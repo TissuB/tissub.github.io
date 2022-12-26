@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TissuBBo</title>
+  <style>
+    /* codice CSS */
+    body {
+        background-color: black;
+        color: gray;
+        font-family: Tahoma;
+        text-align: center;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        padding: 0 20px;
+        font-size: 26px;
+      }
+      nav a {
+        color: white;
+        text-decoration: none;
+      }
+      nav li {
+        font-family: Consolas;
+        margin-left: 20px;
+      }
+      main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        margin: 0 auto;
+        font-size: 30px;
+      }
+      main ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      h1, nav, h2, p, ul, li {
+        text-align: center;
+      }
+      h1 {
+        text-align: left;
+      }
+      nav {
+        text-align: right;
+      }
+      h2#hi-im-tissub {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin-bottom: 40px;
+        font-size: 20px;
+      }
+      section#about {
+        margin-top: 400px;
+      }
+      h1, p, ul {
+        margin-bottom: 200px;
+      }
+      p {
+        margin: 0;
+      }
+      h2 {
+        font-size: 45px;
+        margin-bottom: 80px;
+      }
+      section#projects img {
+        width: 50%;
+        margin-bottom: 20px;
+      }
+      div {
+        display: flex;
+        align-items: center;
+        margin: 100px;
+      }
+      h1 a {
+        color: white;
+        text-decoration: none;
+      }
+      .tissu-title {
+        font-size: 46px;
+        font-family: Arial;
+      }
+      .logo-social {
+        border-bottom: none;
+        margin: 0 25px; /* Aggiunge un margine di 10px a sinistra e a destra */
+        margin-top: 75px;
+      }
+      .footer {
+        text-align: center; /* Allinea il testo al centro */
+      }
+      .footer p {
+        font-size: 20px;
+      }
+      .subtitle {
+        font-size: 12px;
+        margin-top: -90px;
+      }
+      /* 
+████████╗██╗░██████╗░██████╗██╗░░░██╗
+╚══██╔══╝██║██╔════╝██╔════╝██║░░░██║
+░░░██║░░░██║╚█████╗░╚█████╗░██║░░░██║
+░░░██║░░░██║░╚═══██╗░╚═══██╗██║░░░██║
+░░░██║░░░██║██████╔╝██████╔╝╚██████╔╝
+░░░╚═╝░░░╚═╝╚═════╝░╚═════╝░░╚═════╝░ */
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="tissu-title" style="color: white; margin-left: 20px;"><a href="https://github.com/TissuB">Tiss𝓤</a></h1>
+    <nav>
+      <ul>
+        <li><a href="#about">1.About Me</a></li>
+        <li><a href="#projects">2.Projects</a></li>
+        <li><a href="#social">3.Social</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <p id="tissub" style="text-align: left;">print("Hi! I'm TissuB")</p>
+    <section id="about">
+      <h2>1.About Me</h2>
+      <ul></ul>
+      <p>My passion for programming started when I was still a child, in fact I used to play</p>
+      <p>a lot of video games, and I always liked idea of finding out what was behind</p>
+      <p> every game I played, and so thanks to various courses and the computer expert</p>
+      <p>I am succeeding in my aim of becoming a full stack developer.</p>
+    </section>
+    <section id="projects">
+      <h2>2.Projects</h2>
+      <p>These are two projects that i have developed over time, unfortunately I cannot</p>
+      <p>reveal their code, or show them to the public as they are private.</p>
+      <div style="display: flex;">
+        <img src="./bedwarsplugin.png" style="width: 20%; height: auto; display: block; margin: 0 auto;">
+      <p style="text-align: center;">A Bedwars plugin for Minecraft.</p>
+    </div>
+      <div style="display: flex;">
+      <img src="./toolcleaner.png" style="width: 20%; height: auto; display: block; margin: 0 auto;">
+      <p style="text-align: center;">A cleaner tool for the computer.</p>
+    </div>
+    </section>
+    <section id="social">
+      <h2>3.Social</h2>
+      <p>If you want, you can follow me on my socials:</p>
+      <a href="https://github.com/TissuB">
+        <img src="logogithub.png" alt="Logo Github" width="50" class="logo-social"/>
+      </a>
+      <a href="https://www.instagram.com/cristo.damn/">
+        <img src="logoinstagram.png" alt="Logo Instagram" width="50" class="logo-social"/>
+      </a>
+    </section>
+    <div class="footer">
+        <p class="title">Copyright &copy; 2023 TissuB - All rights are reserved</p>
+    </div>
+    <div class="subtitle">
+        <p>Made With Love By TissU</p>
+    </div>
+  </main>
+  <script>
+    const links = document.querySelectorAll('a[href^="#"]');
+    links.forEach(link => {
+        link.addEventListener('click', e => {
+            e.preventDefault();
+            const anchorId = link.getAttribute('href');
+            const anchorElement = document.querySelector(anchorId);
+            const anchorOffset = anchorElement.offsetTop;
+            window.scroll({
+                top: anchorOffset,
+                left: 0,
+                behavior: 'smooth'
+            });
+        });
+    });
+  </script>
+</body>
+</html>
