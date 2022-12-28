@@ -103,6 +103,11 @@
       .footer p {
         font-size: 20px;
       }
+      #tissub + .typed-cursor {
+        position: relative;
+        right: -150px;
+        bottom: 36.5px;
+      }
       .subtitle {
         font-size: 12px;
         margin-top: -90px;
@@ -128,7 +133,7 @@
     </nav>
   </header>
   <main>
-    <p id="tissub" style="text-align: left;">print("Hi! I'm TissuB")</p>
+    <p id="tissub" style="text-align: left;">Hi! I'm TissuB</p>
     <section id="about">
       <h2>1.About Me</h2>
       <ul></ul>
@@ -183,5 +188,33 @@
         });
     });
   </script>
+  <script src="./typed.js-master/lib/typed.js"></script>
+  <script>
+    window.onload = function() {
+      var typed = new Typed("#tissub", {
+        strings: ["I'm TissU", "print('Hi! I'm TissuB')"],
+        typeSpeed: 100,
+        backSpeed: 100,
+        startDelay: 100,
+      });
+    };
+</script><style type="text/css" data-typed-js-css="true">
+  .typed-cursor{
+    opacity: 1;
+  }
+  .typed-cursor.typed-cursor--blink{
+    animation: typedjsBlink 0.9s infinite;
+    -webkit-animation: typedjsBlink 0.9s infinite;
+            animation: typedjsBlink 0.9s infinite;
+  }
+  @keyframes typedjsBlink{
+    50% { opacity: 0.0; }
+  }
+  @-webkit-keyframes typedjsBlink{
+    0% { opacity: 1; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1; }
+  }
+</style>
 </body>
 </html>
