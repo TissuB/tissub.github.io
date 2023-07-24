@@ -210,8 +210,8 @@ const FourOhFour = () => {
 
 
     React.createElement(Logo, { className: "bear-logo--tears" }),
-    React.createElement(Code, { className: "four-oh-four__code" }, "404"),
-    React.createElement(CodeMessage, { className: "four-oh-four__code-message" }, "Not found"))));
+    React.createElement(Code, { className: "four-oh-four__code" }, "104"),
+    React.createElement(CodeMessage, { className: "four-oh-four__code-message" }, "Che schifo i forci"))));
 
 
 
