@@ -219,7 +219,7 @@ p {
   -webkit-text-fill-color: transparent;
 }
 
-.writes {
+#typed-output {
   font-family: righteous;
   display: flex;
   justify-content: center;
