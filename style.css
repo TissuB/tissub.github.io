@@ -1,28 +1,28 @@
 /*-------------------------------------------------
-=  Indicazioni per il codice giusto D:
+=  Indications for the code
 
 1.Reset
-2.Generale
-3.Settaggi principali
-4.Navigazione principale
-5.PaginaIntera
+2.General
+3.Principal Settings
+4.Principal Navigation
+5.Page
 6.Main Content
-7.Pagina per il blog
-8.Navigazione
-9.Pagina
+7.Blog Page
+8.Navigation
+9.Page
 10.Post
-11.Progetti
+11.Projects
 12.Contact me 
 13.Footer
-14.Elementi
-15.Caricamento
+14.Elements
+15.Loading
 16.Popup
 17.OWL
-18.Animazioni
+18.Animation
 
 -------------------------------------------------*/
 /*-------------------------------------------------
-=  Importazione dei font di Google */
+=  Google Fonts importation */
 @import url("https://fonts.googleapis.com/css?family=Product+Sans:400,400i,700,700i");
 @import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700");
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900");
@@ -187,7 +187,7 @@ p.small-height {
   line-height: 28px;
 }
 
-/* classi dei core */
+/* core classes */
 ::-moz-selection {
   background: #0097A7;
   color: white;
@@ -198,67 +198,67 @@ p.small-height {
   color: white;
 }
 
-/* classe bianca: set font color white */
+/* white class: set font color white */
 [class~="white"] {
   color: white !important;
 }
 
-/* classe colore: set font with secondary color */
+/* color class: set font with secondary color */
 [class~="color"] {
   color: #FF5252 !important;
 }
 
-/* classe nera: set font with black color */
+/* black class: set font with black color */
 [class~="black"] {
   color: #FF5252 !important;
 }
 
-/* classe grigia: set font with grey color */
+/* grey class: set font with grey color */
 [class~="grey"] {
   color: white !important;
 }
 
-/* classe grigio-chiaro: set font with light grey color */
+/* light-grey class: set font with light grey color */
 [class~="grey-light"] {
   color: #d1d2d3 !important;
 }
 
-/* class grigio-scuro: set font with dark grey color */
+/* dark-grey class: set font with dark grey color */
 [class~="grey-dark"] {
   color: #6E6E6E !important;
 }
 
-/* classe uppercase: set font uppercase */
+/* uppercase class: set font uppercase */
 [class~="uppercase"] {
   text-transform: uppercase;
 }
 
-/* classe uppercase: set font underline */
+/* uppercase class: set font underline */
 [class~="underline"] {
   text-decoration: underline;
 }
 
-/* classe con font-100: set font weight 100 */
+/* font-100 class: set font weight 100 */
 [class~="font-100"] {
   font-weight: 100 !important;
 }
 
-/* classe con font-300: set font weight 300 */
+/* font-300 class: set font weight 300 */
 [class~="font-300"] {
   font-weight: 300 !important;
 }
 
-/* classe con font-400: set font weight 400 */
+/* font-400 class: set font weight 400 */
 [class~="font-400"] {
   font-weight: 400 !important;
 }
 
-/* classe con font-600: set font weight 600 */
+/* font-600 class: set font weight 600 */
 [class~="font-600"] {
   font-weight: 600 !important;
 }
 
-/* classe con il vertical-align: vertical align */
+/* vertical-align class: vertical align */
 [class="vertical-align"] {
   position: relative;
   top: 50%;
@@ -268,7 +268,7 @@ p.small-height {
   z-index: 3;
 }
 
-/* classe vertical-align: vertical align over 991px */
+/* vertical-align class: vertical align over 991px */
 @media screen and (min-width: 991px) {
   [class="vertical-align-lg"] {
     position: relative;
@@ -577,7 +577,7 @@ img[class~="center"] {
   }
 }
 
-/* fixati i padding/margin shortcodes */
+/* fixed padding/margin shortcodes */
 .padding-bottom {
   padding-bottom: 36px;
 }
@@ -823,7 +823,7 @@ img[class~="center"] {
   }
 }
 
-/* altri shortcodes */
+/* others shortcodes */
 .z-index {
   position: relative;
   z-index: 10 !important;
@@ -862,7 +862,7 @@ img[class~="center"] {
 }
 
 /*-------------------------------------------------*/
-/* =  3.Settaggi principali
+/* =  3.Principal Settings
 /*-------------------------------------------------*/
 .col-xs-15,
 .col-sm-15,
@@ -901,7 +901,7 @@ img[class~="center"] {
 }
 
 /*-------------------------------------------------*/
-/* =  4.Navigazione principale
+/* =  4.Principal Navigation
 /*-------------------------------------------------*/
 header {
   position: relative;
@@ -944,7 +944,7 @@ header nav.navbar #logo a.navbar-brand img {
 }
 
 /*-------------------------------------------------*/
-/* =  5.settaggi principali
+/* =  5.Principal Settings
 /*-------------------------------------------------*/
 [class*='col-'] {
   padding-left: 0;
@@ -2118,7 +2118,7 @@ footer .wrap-social ul li a {
 }
 
 /*-------------------------------------------------*/
-/* =  15.Caricamento
+/* =  15.Loading
 /*-------------------------------------------------*/
 .pace {
   -webkit-pointer-events: none;
@@ -2316,7 +2316,7 @@ button.mfp-close:hover {
 }
 
 /*-------------------------------------------------*/
-/* =  18.Animazioni
+/* =  18.Animation
 /*-------------------------------------------------*/
 .animated {
   -webkit-animation-duration: 1s;
