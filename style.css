@@ -24,16 +24,13 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  display: table;
   user-select: none;
   pointer-events: none;
+  text-align: center;
 }
 
 footer p {
   margin: 0;
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
 }
 
 .card {
