@@ -17,6 +17,25 @@ body {
   padding: 20px;
 }
 
+footer {
+  color: #fff;
+  padding: 20px;
+  font-family: "DM Sans", sans-serif;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: table;
+  user-select: none;
+  pointer-events: none;
+}
+
+footer p {
+  margin: 0;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
 .card {
   max-width: 340px;
   margin: auto;
