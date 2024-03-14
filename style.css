@@ -375,3 +375,59 @@ footer p {
   font-family: "Jost", sans-serif;
   transition: 0.3s;
 }
+
+@media only screen and (max-width: 600px) {
+  .card {
+    max-width: calc(340px + 30%);
+
+  .card-header {
+    height: calc(200px + 30%);
+  }
+ 
+  .card-subtitle {
+    font-size: calc(13px + 30%);
+  }
+  
+  .card-fullname {
+    font-size: calc(22px + 30%);
+  }
+  .card-desc {
+    font-size: calc(14px + 30%);
+  }
+  
+  .card-jobtitle {
+    font-size: calc(11px + 30%);
+  }
+  
+  .card-item-title {
+    font-size: calc(14px + 30%);
+  }
+  
+  .card-item-desc {
+    font-size: calc(13px + 30%);
+  }
+  
+  .card-contact {
+    font-size: calc(13px + 30%);
+  }
+
+  .card-social svg {
+    width: 90%;
+  }
+
+  .card-social a {
+    width: 90%;
+    height: 90%;
+    margin-left: 10%;
+  }
+
+  .contact-me {
+    font-size: calc(14px + 30%);
+    margin-top: 38px;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
