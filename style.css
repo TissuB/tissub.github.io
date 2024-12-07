@@ -6,7 +6,7 @@
 body {
   color: #2b2c48;
   font-family: "Jost", sans-serif;
-  background-image: url(https://wallpapers.com/images/hd/chill-4k-mountain-sunset-art-6jor3hh9q5cm5bjj.jpg);
+  background-image: url(https://wallpapercave.com/wp/wp13270996.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -194,7 +194,7 @@ footer p {
 }
 .card-social svg {
   fill: #a5b5ce;
-  width: 16px;
+  width: 24px;
   display: block;
   transition: 0.3s;
 }
@@ -381,22 +381,34 @@ footer p {
     max-width: calc(340px + 30%);
 
   .card-header {
-    height: calc(200px + 30%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+
+  .card-avatar {
+    height: 100px;
+    width: 100px;
+  }
+
+  .card-timeline {
+    font-size: ;
   }
  
   .card-subtitle {
-    font-size: calc(13px + 30%);
+    font-size: calc(11px + 30%);
   }
   
   .card-fullname {
-    font-size: calc(22px + 30%);
+    font-size: calc(20px + 30%);
   }
   .card-desc {
-    font-size: calc(14px + 30%);
+    font-size: calc(10px + 30%);
   }
   
   .card-jobtitle {
-    font-size: calc(11px + 30%);
+    font-size: calc(10px + 30%);
   }
   
   .card-item-title {
@@ -404,21 +416,28 @@ footer p {
   }
   
   .card-item-desc {
-    font-size: calc(13px + 30%);
+    font-size: calc(12px + 30%);
   }
   
   .card-contact {
     font-size: calc(13px + 30%);
   }
 
+  .card-social {
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+    gap: 50px;
+  }
+
   .card-social svg {
-    width: 90%;
+    width: 40px;
+    height: 40px;
   }
 
   .card-social a {
-    width: 90%;
-    height: 90%;
-    margin-left: 10%;
+    width: 50px;
+    height: 50px;
   }
 
   .contact-me {
